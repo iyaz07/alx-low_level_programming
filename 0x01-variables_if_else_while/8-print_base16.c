@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * Main - A program to print the list of hex number
+ * main - A program to print the list of hex number
  * Return: Return 0 if successful
  */
 int main(void)
