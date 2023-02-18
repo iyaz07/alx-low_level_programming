@@ -2,15 +2,17 @@
 #include<stdlib.h>
 
 /**
- * main - A programme to print in reverse
- * Return: retuns 0 if successful
+ * main - a programe to write A-z in reverse
+ * Return: Return 0 If successful
  */
 int main(void)
 {
-	char revC;
+	char rev;
 
-	for (revC = 'z'; revC >= 'a'; revC-- )
-		putchar(revC);
+	for (rev = 'z'; rev >= 'a'; rev--)
+		putchar(rev);
 	putchar('\n');
+
 	return (0);
+
 }
