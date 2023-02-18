@@ -9,9 +9,10 @@ int main(void)
 {
 	int Base_10;
 
-	Base_10 = 0;
-
 	for (Base_10 = 0; Base_10 < 10; Base_10++)
-		printf("Base_10");
+	{
+		printf("%d", Base_10);
+		printf("\n");
+	}
 	return (0);
 }
