@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islower - check the code.
+* _isalpha - check the code.
 * @c: The character to be checked
 6 * Return: return 1 for lowercase or 0 for anything else.
 */
