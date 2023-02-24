@@ -3,7 +3,9 @@
 
 /**
 * main - function for couunting randoms
-* Return: 0 if successful
+* @a: First arg
+* @b: Second arg
+* Return: a * b if successful
 */
 int mul(int a, int b)
 {
