@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* main - function for couunting randoms
+* mul - function for couunting randoms
 * @a: First arg
 * @b: Second arg
 * Return: a * b if successful
