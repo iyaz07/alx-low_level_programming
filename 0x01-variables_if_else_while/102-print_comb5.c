@@ -6,7 +6,7 @@
  *
  * Return: return 0 if successful
  */
-int main()
+int main(void)
 {
 	int m1, m2;
 
@@ -14,17 +14,17 @@ int main()
 	{
 	for (m2 = m1 + 1; m2 <= 99; m2++)
 	{
-			putchar((m1 / 10) + '0');
-			putchar((m1 % 10) + '0');
-			putchar(' ');
-			putchar((m2 / 10) + '0');
-			putchar((m2 % 10) + '0');	
-			if (m1 == 98 && m2 == 99)
-			continue;
-			putchar(',');
-			putchar(' ');
+		putchar((m1 / 10) + '0');
+		putchar((m1 % 10) + '0');
+		putchar(' ');
+		putchar((m2 / 10) + '0');
+		putchar((m2 % 10) + '0');
+		if (m1 == 98 && m2 == 99)
+		continue;
+		putchar(',');
+		putchar(' ');
 	}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
