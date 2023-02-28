@@ -2,14 +2,13 @@
 #include <stdio.h>
 
 /**
- * swap_int - swaps two different pointer parameters
- * @a: first param
- * @b: second param
+ * _puts - prints string to the stdout
+ * @str: arg
  * Return: return is void
  */
 void _puts(char *str)
 {
-	for (; *str!= '\0' str++)
+	for (; *str!= '\0'; str++)
 	{
 		_putchar(*str);
 		_putchar('\n');
