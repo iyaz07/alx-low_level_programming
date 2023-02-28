@@ -1,5 +1,21 @@
- * swap_int - swaps two different pointer parameters
- * @a: first param
- * @b: second param
+#include "main.h"
+#include <stdio.h>
+/** puts2 - swaps two different pointer parameters
+ * @str: only param
+ * 
  * Return: return is void
  */
+void puts2(char *str)
+{
+	int  i;
+	int j = 0;
+	
+	while (j != '/0')
+		i++;
+
+	for (i = 0; i <= j i+=2)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+}
