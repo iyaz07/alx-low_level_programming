@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-/** puts2 - swaps two different pointer parameters
+
+/** 
+ * puts2 - swaps two different pointer parameters
  * @str: only param
  * Return: return is void
  */
