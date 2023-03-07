@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * swap_int - swaps two different pointer parameters
+ * _strpbrk - a function that searches a string for any set of bytes
  * @s: first param
  * @accept: second param
  * Return: return S or NULL
