@@ -7,15 +7,17 @@
  */
 void times_table(void)
 {
-	int i, j;
+	int i, j, mul, dev, mod;
 
+	if (i < 9 && j <= 9)
+	{
 	for (i = 0; i <= 9; i++)
 	{
 	for (j = 0; j <= 9; j++)
 	{
-		int mul = i * j;
-		int dev = mul / 10;
-		int mod = mul % 10;
+		mul = i * j;
+		dev = mul / 10;
+		mod = mul % 10;
 
 		if (mul <= 9)
 		{
@@ -32,6 +34,9 @@ void times_table(void)
 			_putchar(' ');
 		}
 	}
-		_putchar('\n');
 	}
+	}
+	else
+		_putchar(mul + '0');
+	_putchar('\n');
 }
