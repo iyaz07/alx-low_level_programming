@@ -1,55 +1,37 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_times_table - prints times table for 0-14
- * @n: Integer input
+ * print_to_98 - Check main
+ * @n: Test integer
+ * Description: Prints all natural numbers
+ * from n to 98, followed by a new line.
  * Return: Nothing
  */
-void print_times_table(int n)
+void print_to_98(int n)
 {
-	int i, j;
-
-	if (n >= 0 && n < 15)
+	if (n <= 98)
 	{
-		for (i = 0; i <= n; i++)
+		for (; n <= 98; n++)
 		{
-			_putchar('0');
-			for (j = 1; j <= n; j++)
-				putformat(i * j);
-			_putchar('\n');
-		}
-	}
-}
+			printf("%d", n);
 
-/**
- * putformat - formatted characters to output
- * @n: number to format
- * Return: nothing
- */
-void putformat(int n)
-{
-	if (n <= 9)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n + '0');
-	}
-	else if (n > 9 && n <= 99)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
 	}
 	else
 	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
+		for (; n >= 98; n--)
+		{
+			printf("%d", n);
+
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
 	}
 }
