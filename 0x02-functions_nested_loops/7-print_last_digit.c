@@ -2,7 +2,7 @@
 
 /**
   * print_last_digit - Check Description
-  * @r: Integer input
+  * @j: Integer input
   * Description: To the last digit of a number
   * Return: last digit of number r
   */
