@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-  * print_alphabet_X10 - Function to print a-z x10
+  * print_alphabet_x10 - Function to print a-z x10
   *
   * Return: 0 always (success)
   */
