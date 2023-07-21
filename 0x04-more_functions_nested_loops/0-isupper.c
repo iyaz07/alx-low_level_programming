@@ -17,8 +17,6 @@ int _isupper(int c)
 			isupper = 1;
 			break;
 		}
-		else
-			return (0);
 	}
 
 	return (isupper);
