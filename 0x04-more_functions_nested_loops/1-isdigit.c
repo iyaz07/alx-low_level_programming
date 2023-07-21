@@ -7,10 +7,10 @@
  */
 int _isdigit(int c)
 {
-	int isdigit = 0;
+	int isdigit = '0';
 	int yesdigit = 0;
 
-	for (; uppercase <= 9; isdigit++)
+	for (; uppercase <= '9'; isdigit++)
 	{
 		if (c == isdigit)
 		{
