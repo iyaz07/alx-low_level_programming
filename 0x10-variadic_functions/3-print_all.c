@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	char *temp;
 	int i = 0;
 
-	va_start(ap, format);
+	va_start(variety, format);
 	while (format == NULL)
 	{
 		printf("\n");
