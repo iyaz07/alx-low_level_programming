@@ -20,10 +20,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		nums = va_arg(variety, int);
 		printf("%d", nums);
-		if (!(*separator))
+		if (!separator)
 			continue;
 		if (i < n - 1)
-			printf("%s", *separator);
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(variety);
