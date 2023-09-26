@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "lists.h"
 /**
  * pop_listint - deletes the head node of a listint_t
  * linked list, and returns the head nodes data (n)
@@ -7,8 +8,7 @@
  *
  * Return: returns data
  *
- */#include "lists.h"
-
+ */
 int pop_listint(listint_t **head)
 {
 	int data = 0;
