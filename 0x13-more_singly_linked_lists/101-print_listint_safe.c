@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "your_header_file.h"  // Replace with the actual header file
+#include "lists.h"  /*Replace with the actual header file*/
 
 /**
  * print_listint_safe - Prints a listint_t linked list safely, handling loops
@@ -12,6 +12,9 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *current = head;
 	size_t node_count = 0;
+	size_t i;
+
+	const listint_t *check_loop;
 
 	while (current != NULL)
 	{
@@ -21,10 +24,10 @@ size_t print_listint_safe(const listint_t *head)
         /*Move to the next node*/
 		current = current->next;
 
-	/*Check for a loop by comparing the address with previously visited nodes*/
-		const listint_t *check_loop = head;
-	
-		for (size_t i = 0; i < node_count; i++)
+	/*Check for a loop by comparing the address with previously visited nodes*/	
+		 check_loop = head;
+
+		for (i = 0; i < node_count; i++)
 		{
 			if (check_loop == current)
 			{
@@ -36,4 +39,3 @@ size_t print_listint_safe(const listint_t *head)
 	}
 	return (node_count);
 }
-
