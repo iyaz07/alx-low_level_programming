@@ -18,7 +18,6 @@ hash_table_t *hash_table_create(unsigned long int size)
                 return (NULL);
 
         new_t->size = size;
-        -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-hash_table_create.c -o a
         new_t->array = malloc(sizeof(hash_node_t *) * size);
 
         if (new_t->array == NULL)
