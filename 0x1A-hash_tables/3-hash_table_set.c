@@ -6,7 +6,7 @@
  * @key: key to be used
  * @value: value at key
  *
- * Return 1, else 0
+ * Return: 1, else 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
