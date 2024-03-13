@@ -46,6 +46,6 @@ void print_array(int *array, int start, int stop)
 	{
 		for (i = start; i < stop; i++)
 			printf("%d, ", array[i]);
-			printf("%d\n", array[i]);
+		printf("%d\n", array[i]);
 	}
 }
