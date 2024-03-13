@@ -2,7 +2,7 @@
 
 /**
  * jump_search - Function that searches for a value in a sorted
- * 		 array of integers using Jump search algo
+ * array of integers using Jump search algo
  * @array: pointer to the array to search through
  * @size: length of the array
  * @value: Target key
@@ -12,9 +12,10 @@
 int jump_search(int *array, size_t size, int value)
 {
 	int jump, i, prev;
-	if (array == NULL || size == 0)
-		return -1;
 	
+	if (array == NULL || size == 0)
+		return (-1);
+
 	jump = sqrt(size);
 	prev = 0;
 
@@ -33,7 +34,7 @@ int jump_search(int *array, size_t size, int value)
 	{
 		printf("Value checked array[%d] = [%d]\n", i, array[i]);
 		if (array[i] == value)
-		return i;
+		return (i);
 	}
-	return -1;
-}	
+	return (-1);
+}
